@@ -1,0 +1,42 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.cards{
+    width: 250px;
+    height:500px ;
+    border: 1px solid;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 12px;
+}
+#brand::first-letter{
+    color: gold;
+
+}
+.tagline{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
+}
+
+img{
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+}
+.description{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 17px;
+}
+.cards:hover img {
+    border-radius: 10px 10px 0 0 ;
+    transform: scale(1.1);
+
+}
+@media(max-width:750px){
+    .main{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
